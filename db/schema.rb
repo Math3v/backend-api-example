@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170526120921) do
+ActiveRecord::Schema.define(version: 20170526123323) do
+
+  create_table "quotes", force: :cascade do |t|
+    t.string "character"
+    t.text "quote"
+    t.string "location"
+    t.string "witness"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "tokens", force: :cascade do |t|
     t.string "value"
