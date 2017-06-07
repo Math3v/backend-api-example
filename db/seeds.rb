@@ -12,9 +12,9 @@ Token.create(value: SecureRandom.hex(32))
 Quote.destroy_all
 100.times do
   Quote.create({
-    character: Faker::HarryPotter.character,
-    quote:     Faker::StarWars.quote,
+    character: Faker::LordOfTheRings.character,
+    quote:     Faker::HarryPotter.quote,
     location:  Faker::LordOfTheRings.location,
-    witness:   Faker::LordOfTheRings.character
+    witness:   Faker::HarryPotter.character
   })
 end
